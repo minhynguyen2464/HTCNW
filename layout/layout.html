@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  background-color: aqua;
+  padding: 30px;
+  width: 1089px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.row{
+    width: 1089px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px; 
+  width: 1089px;
+}
+
+/* Left and right column */
+.column.left {
+  width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 52%;
+}
+.column.right{
+    width:18%
+}
+
+
+
+/* Style the footer */
+.footer {
+  background-color: aqua;
+  padding: 10px;
+  width: 1089px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+</div>
+<div class="row">
+  <div class="column left" style="background-color:aqua;">30%</div>
+  <div class="column middle" style="background-color:rgb(180, 218, 13);">52%</div>
+  <div class="column right" style="background-color:rgb(57, 9, 168);">18%</div>
+</div>
+<div class="footer">
+  <p>Footer</p>
+</div>
+</body>
+</html>
+
+
