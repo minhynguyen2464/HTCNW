@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: auto;
+        }
+        .wrapper{
+            width: 1080px;
+            height: 720px;
+            background-color: chartreuse;
+        }
+        nav{
+            width: 1080px;
+            height: 50px;
+            background-color: aqua;
+        }
+        nav ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        nav li{
+            height: 50px;
+            width: 180px;
+            background-color: blueviolet;
+            float:left;
+            line-height: 50px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: larger;
+            color: rgb(255, 115, 0);
+        }
+        .menu li:hover{
+            background-color: rgb(247, 247, 247);
+        }
+        .menu li .submenu{
+            display: none;
+        }
+        .menu li:hover>.submenu{
+            display:block
+        }
+        .submenu a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: large;
+            color: rgb(255, 115, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+             <ul class="menu">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li>
+                    <a href="#">Menu 3</a>
+                    <ul class="submenu">
+                        <li><a href="#">Menu 3.1</a></li>
+                        <li><a href="#">Menu 3.2</a></li>
+                        <li><a href="#">Menu 3.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+                <li><a href="#">Menu 6</a></li>
+             </ul>
+        </nav>
+    </div>
+</body>
+</html>
