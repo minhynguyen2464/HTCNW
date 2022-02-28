@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Your messenge</legend>
+            <form action="" method="get">
+                <label for="to">To </label>
+                <input type="text" name="To" id="to" value="Example Cafe" disabled size="20" maxlength="20"><br><br>
+                <label for="email"> Your email: </label>
+                <input type="email" name="Email" id="email" size="20" maxlength="20"><br><br>
+                <label for="message">Message</label>
+                <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <label for="social">How did you hear of us</label>
+            <input type="text" name="Social" list="social" size="10" maxlength="10">
+            <datalist id="social">
+                <option value="Google"></option>
+                <option value="Facebook"></option>
+                <option value="Youtube"></option>
+                <option value="Twitter"></option>
+            </datalist><br><br>
+            <label for="newsletter">Newsletter</label>
+            <input type="checkbox" name="Newsletter" id="newsletter">
+            <label for="newsletter">Ensure this box is checked if you would like to receive email updates</label>
+        </fieldset><br>
+        <input type="submit" value="Send message">
+    </form>
+</body>
+</html>

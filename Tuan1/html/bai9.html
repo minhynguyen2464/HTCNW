@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Please indicate your area of interest:</p>
+    <form action="" method="get" name="Forminfo">
+        <input type="text" name="txtName" size="20" maxlength="20" list="tech">
+        <datalist id="tech">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="Javascript"></option>
+        </datalist>
+    </form>
+    <p>Name: </p>
+    <form action="">
+        <input type="text" name="Name" id="name" placeholder="Thanh Van" required>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <form action="" method="get">
+        <label for="name">Name: <br></label>
+        <input type="text" name="Name" id="name" size="20">
+        <br><br>
+        <label for="telenumb">Telphone Number: <br></label> 
+        <input type="text" name="Telephone Numb" id="telenumb" size="20">
+        <br><br>
+        <label for="email">Email <br></label>
+        <input type="email" name="Email" id="email" size="20">
+        <br><br>
+        <label for="color">Color <br></label>
+        <input type="color" name="Favorite color" id="color">
+        <br><br>
+        <label for="dob">Date of Birth <br></label>
+        <input type="date" name="Date of birth" id="dob"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
