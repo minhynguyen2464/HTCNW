@@ -49,6 +49,25 @@
             height: 130px;
             background-color: lightgreen;
         }
+        article{
+            width: 100%;
+            height: 100%;
+        }
+        input[type=text]{
+            width: 80%;
+            padding: 8px;
+            display:inline-block;
+        }
+        input[type=password]{
+            width: 80%;
+            padding: 8px;
+            display:inline-block;
+        }
+        input[type=email]{
+            width: 80%;
+            padding: 8px;
+            display:inline-block;
+        }
     </style>
 </head>
 <body>
@@ -56,8 +75,34 @@
         <nav></nav>
         <header></header>
          <div class="section">
-             <menu-left></menu-left>
-             <content></content>
+             <menu-left>
+
+             </menu-left>
+             <content>
+                <caption><h1>ĐƠN ĐĂNG KÝ</h1></caption>
+                <form action="" method="get">
+                    <fieldset>
+                        <legend>Đăng ký mùa hè sôi động</legend>
+                        <label for="idName">Tên: </label>
+                        <input type="text" name="Name" id="idName" maxlength="30" size="30" required placeholder="Nhập tên của bạn"> <br><br>
+                        <label for="idUsr">Username: </label>
+                        <input type="text" name="Username" id="idUsr" maxlength="30" size="30" required placeholder="Nhập tên đăng nhập của bạn"> <br><br>
+                        <label for="idPassword">Password: </label>
+                        <input type="password" name="Password" id="idPassword" maxlength="30" size="30" required placeholder="Nhập mật khẩu của bạn"> <br><br>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="Email" id="idEmail" maxlength="30" size="30" required placeholder="Nhập địa chỉ email của bạn"> <br><br>
+                        <label for="idGender">Giới tính: </label><br>
+                            <input type="radio" name="Gender" id="Male">
+                            <label for="Male">Nam</label><br>
+                            <input type="radio" name="Gender" id="Female">
+                            <label for="Female">Nữ</label><br>
+                            <input type="radio" name="Gender" id="Helicopter">
+                            <label for="Helicopter">Apache Helicopter</label><br><br>
+                            <input type="submit" value="Xác nhận" style="width: 200px;">
+                            <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
+             </content>
         </div>
         <footer></footer>
     </div>
