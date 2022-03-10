@@ -68,11 +68,49 @@
             padding: 8px;
             display:inline-block;
         }
+        .menu li{
+            list-style-type: none;
+            float:left;
+            width: 272px;
+            text-align: center;
+            line-height: 49px;
+        }
+        .menu a{
+            font-size: larger;
+            font-weight: bold;
+            color: chartreuse;
+            text-decoration: none;
+        }
+        .menu li:hover{
+            background-color:blueviolet;
+        }
+        .submenu li{
+            display: none;
+            background-color: magenta;
+
+        }
+        .menu li:hover .submenu li{
+            display: block;
+     
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <nav></nav>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a>
+                <ul class="submenu">
+                    <li><a href="#">Menu 2.1</a></li>
+                    <li><a href="#">Menu 2.2</a></li>
+                    <li><a href="#">Menu 2.3</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
         <header></header>
          <div class="section">
              <menu-left>
