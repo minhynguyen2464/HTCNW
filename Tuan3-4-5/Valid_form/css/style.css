@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+}
+
+h1,h2{
+    text-align: center;
+}
+input{
+    text-align: center;
+
+}
+
+label{
+    font-size: large;
+}
+
+span{
+    color:red;
+}
+
+input[type=submit], input[type=reset]{
+    padding: .1em .2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+div{
+    border-bottom: 1px solid whitesmoke;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 720px;
+}
+.title{
+    
+}
+.submit{
+    text-align: center;
+}
