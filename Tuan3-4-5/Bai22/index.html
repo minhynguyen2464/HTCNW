@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .wrapper{
+            width: 1000px;
+            height: 600px;
+            background-color: gainsboro;
+        }
+        header{
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            color: brown;
+        }
+        nav .menu{
+            text-align: center;
+        }
+        nav .menu ul{
+            list-style: none;
+            display: inline-flex;
+            background-color: brown;
+        }
+        nav .menu li{
+            width: 120px;
+            margin: 10px;
+            padding: 10px;
+        }
+        nav .menu li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .content{
+            width: 98%;
+            height: 380px;
+            background-color: gray;
+            text-align: center;
+            margin: 10px;
+        }
+        article{
+            width: 25%;
+            height: 100%;
+            float:left;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Web Programming Competition</h1><br>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">MATERIALS</a></li>
+                        <li><a href="#">COMPETITION</a></li>
+                        <li><a href="#">PAST YEARS</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <h1 style="color: white; font-weight: bold; font-size: 60px;">CSS COURSE</h1><br><br>
+            <h2 style="color: brown; font-weight: bold; font-size: 50px;">Learn Web Programming</h2><br><br>
+            <article><h2 style="color: white;">Comprehensive Curriculum</h2></article>
+            <article><h2 style="color: brown;">Insightful Guest Lectures</h2></article>
+            <article><h2 style="color: white;">Interaction with Sposors</h2></article>
+            <article><h2 style="color: white;">$30,000+ in Total Prizes</h2></article>
+        </div>
+    </div>
+</body>
+</html>
