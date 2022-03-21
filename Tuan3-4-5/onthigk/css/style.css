@@ -1,0 +1,164 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 960px;
+    border: 1px solid black;  
+    background-color: gray;
+}
+
+#header{
+    height: 100px;
+    background-color:darkcyan;
+    position: relative;
+    color: white;
+}
+
+#header img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#header h1{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+#header p{
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+}
+
+#header form{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-parent{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    list-style: none;
+}
+
+.menu-parent a{
+    color: white;
+    padding: 10px 20px;
+    display:block;
+    text-decoration: none;
+    background-color:darkblue;
+    margin-left: 10px;
+}
+
+.menu-parent a:hover{
+    background-color:dodgerblue;
+    border-radius: 5px;
+    color:white;
+}
+
+.menu-child{
+    display:none;
+}
+
+.menu-parent li:hover .menu-child{
+    display:block;
+    position: absolute;
+    margin-left: -40px;
+}
+
+#header input, #header button{
+    background-color: lightseagreen;
+    border: 1px solid dodgerblue;
+    padding: 5px;
+}
+
+#header input::-webkit-input-placeholder, #header button{
+    color: white;
+}
+
+#section{
+    width: 70%;
+    float:left;
+    padding: 40px 40px 20px 10px;
+}
+
+#section form{
+    width: 60%;
+    float:left;
+    padding-right: 40px;
+}
+
+#section input{
+    width: 160px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+#section textarea{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+#section form p:first-child{
+    color: orange;
+    text-shadow: 3px 4px 3px gray;
+}
+
+#section-right{
+    width: 40%;
+    float: right;
+}
+
+.form-col{
+    width: 50%;
+    float:left;
+}
+
+.form-row{
+    clear:both;
+    line-height: 30px;
+}
+
+#aside{
+    width: 28%;
+    float:right;
+    margin: 30px 1%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+#aside img{
+    width: 230px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#aside p:last-child{
+    font-weight: bold;
+    float:right;
+}
+
+#aside a{
+    text-decoration: none;
+    font-weight: bold;
+    float:right;
+}
+
+#footer{
+    clear:both;
+    background-color:lightseagreen;
+    padding: 5px;
+}
