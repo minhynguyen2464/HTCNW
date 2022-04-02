@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="../js/myjs.js"></script>
+	</head>
+	<body>
+		
+		<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Open modal</a>
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						
+						<form action="" method="POST" class="form-horizontal" role="form">
+								<div class="form-group">
+									<legend>Đăng ký</legend>
+								</div>
+								
+								<div class="form-group">
+									<label for="txtName" class="col-sm-2 control-label">Tên: </label>
+									<div class="col-sm-10">
+										<input type="text" name="" id="txtName" class="form-control" value="" required="required" pattern="" title="" placeholder="Nguyen Van Phong">
+										<span id="checkName" class="text-danger">*</span>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="txtUsername" class="col-sm-2 control-label">Tên đăng nhập: </label>
+									<div class="col-sm-10">
+										<input type="text" name="" id="txtUsername" class="form-control" value="" required="required" pattern="" title="">
+										<span id="checkUsername" class="text-danger">*</span>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="txtPassword" class="col-sm-2 control-label">Mật khẩu: </label>
+									<div class="col-sm-10">
+										<input type="password" name="" id="txtPassword" class="form-control" required="required" title="" placeholder="example123">
+										<span id="checkPassword" class="text-danger">*</span>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="txtSDT" class="col-sm-2 control-label">SDT: </label>
+									<div class="col-sm-10">
+										<input type="text" name="" id="txtSDT" class="form-control" value="" required="required" pattern="" title="" placeholder="0938-594-134">
+										<span id="checkSDT" class="text-danger">*</span>
+									</div>
+								</div>
+	
+								<div class="form-group">
+									<label for="txtEmail" class="col-sm-2 control-label">Email: </label>
+									<div class="col-sm-10">
+										<input type="email" name="" id="txtEmail" class="form-control" value="" required="required" title="" placeholder="example@iuh.edu.vn">
+										<span id="checkEmail" class="text-danger">*</span>
+									</div>
+								</div>
+								
+								
+						</form>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
