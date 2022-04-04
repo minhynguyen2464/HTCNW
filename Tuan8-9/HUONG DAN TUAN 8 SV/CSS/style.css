@@ -1,0 +1,11 @@
+.navbar{
+    background-color:darkslategray; 
+    color: dodgerblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar-nav{
+    float:none;
+    display: inline-block;
+}

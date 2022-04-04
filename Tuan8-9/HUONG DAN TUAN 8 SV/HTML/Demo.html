@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="col-xs-12">
+            <img src="../IMG/paner.jpg" alt="" srcset="" width="100%">
+        </div>
+        
+        
+        <div class="col-xs-12">
+            
+                <div class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#" style="margin-right: 20px;" id="btn1">Đăng nhập</a>
+                        </li>
+                        <li>
+                            <a href="#" id="btn2">Đăng ký</a>
+                        </li>
+                    </ul>
+                </div>
+        
+        
+        <div class="col-xs-12">
+            <h4 style="text-align: center;">DANH SÁCH ĐỘI TUYỂN VIỆT NAM</h4>
+            
+            <table class="table table-striped" role="table" id="danhsach">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Số áo</th>
+                        <th>Địa chỉ</th>
+                        <th>Ngày tập trung</th>
+                        <th>Điện thoại</th>
+                        <th>Ảnh đại diện</th>
+                    </tr>
+            </table>
+            
+        </div>
+        
+        
+        <div class="col-xs-12">
+            <footer>
+                <p style="text-align: center;">Mã sinh viên: 20071341 Lớp: DHKHMT16B</p>
+            </footer>
+        </div>
+
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 class="modal-title">THÔNG TIN CÁ NHÂN</h2>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="" method="POST" class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="Name" class="col-sm-2 control-label">Họ tên:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="" id="Name" class="form-control" value="" required="required" pattern="" title="" placeholder="Nguyen Phong">
+                                    <span class="text-danger" id="tbName">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="Ao" class="col-sm-2 control-label">Số áo:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="" id="Ao" class="form-control" value="" required="required" pattern="" title="" placeholder="23">
+                                    <span class="text-danger" id="tbAo">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="DC" class="col-sm-2 control-label">Địa chỉ:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="" id="DC" class="form-control" value="" required="required" pattern="" title="" placeholder="24 Nguyen Van Bao">
+                                    <span class="text-danger" id="tbDC">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="NTT" class="col-sm-2 control-label">Ngày tập trung:</label>
+                                <div class="col-sm-10">
+                                    <input type="date" name="" id="NTT" class="form-control" value="" required="required" title="">
+                                    <span class="text-danger" id="tbNTT">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="SDT" class="col-sm-2 control-label">Số điện thoại:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="" id="SDT" class="form-control" value="" required="required" pattern="" title="" placeholder="(0)943-234-349">
+                                    <span class="text-danger" id="tbSDT">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ADD" class="col-sm-2 control-label">Ảnh đại diện:</label>
+                                <div class="col-sm-10">
+                                    <input type="file" name="" id="ADD" class="form-control" value="" required="required" pattern="" title="">
+                                    <span class="text-danger" id="tbADD">*</span>
+                                </div>
+                            </div>
+                            
+                            <button type="button" class="btn btn-success btn-group-justified" id="Save" style="color: white; background-color: green; width: 100%;">Lưu</button>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+      
+</body>
+
+</html>
