@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuan9</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/myJS.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="../Images/logo.PNG" alt="" srcset="" width="100%">
+                </div>
+                <div class="col-sm-10 text-center bg-info">
+                    <h2>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h2>
+                    <h3 class="text-danger">KHOA CÔNG NGHỆ THÔNG TIN</h3>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#">FIT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#">Giảng viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#">Sinh viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-primary" href="#" id="myBtn">Đoàn TN</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <section class="col-sm-4">
+                <img src="../Images/ngayhoithanhnien.JPG" class="rounded-circle" alt="" srcset="" width="100%">
+            </section>
+            <aside class="col-sm-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>MÃ SV</th>
+                            <th>HỌ TÊN</th>
+                            <th>GIỚI TÍNH</th>
+                            <th>NĂNG KHIẾU</th>
+                            <th>EMAIL</th>
+                            <th>THÀNH PHỐ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </aside>
+        </div>
+        <footer class="col-sm-12 bg-info text-center">
+            <h2>KHOA CÔNG NGHỆ THÔNG TIN</h2>
+            <h3>LỚP: DHKHMT16B</h3>
+        </footer>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">THÔNG TIN ĐĂNG KÝ</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <form action="" method="POST" role="form">
+                            <div class="form-group">
+                                <label for="">Mã sinh viên: </label>
+                                <input type="text" class="form-control" id="txtMS">
+                                <span class="text-danger" id="spMS">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Họ tên: </label>
+                                <input type="text" class="form-control" id="txtName">
+                                <span class="text-danger" id="spName">*</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email: </label>
+                                <input type="email" class="form-control" id="txtEmail" placeholder="xxx@iuh.edu.vn">
+                                <span class="text-danger" id="spEmail">*</span>
+                            </div>
+                            <p>Năng khiếu: </p>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="Bơi" name="talent">
+                                    Bơi
+                                </label>
+                                <label style="margin-left: 20px;">
+                                    <input type="checkbox" value="Cầu lông" name="talent">
+                                    Cầu lông
+                                </label>
+                                <label style="margin-left: 20px;">
+                                    <input type="checkbox" value="Bóng chuyền" name="talent">
+                                    Bóng chuyền
+                                </label>
+                            </div>
+                            <div class="form-group">
+                              <label for="">Thành phố: </label>
+                              <select class="form-control" name="TP" id="txtTP">
+                                <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                <option value="Vũng Tàu">Vũng Tàu</option>
+                                <option value="TP.HCM">TP.HCM</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                              </select>
+                            </div>
+                            <p>Giới tính: </p>
+                            <input type="radio" name="gender" id="nam" value="Nam">
+                            <label for="nam">Nam</label><br>
+                            <input type="radio" name="gender" id="nu" value="Nữ">
+                            <label for="nu">Nữ</label><br>
+                            <input type="radio" name="gender" id="khac" value="Khác">
+                            <label for="khac">Khác</label><br>
+                            
+                        </form>
+                        
+                       
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button id="btnSave" type="button" class="btn btn-primary bg-warning" style="border: 0px;">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
