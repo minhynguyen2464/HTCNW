@@ -1,0 +1,20 @@
+
+
+header h3,h4{
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px gray;
+    color: darkblue;
+}
+
+.navbar{
+    width: 1140px;
+    margin-left: -15px;
+}
+
+footer{
+    clear:both
+}
+
+.banner-text{
+    margin-top: 2%;
+}
