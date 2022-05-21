@@ -54,8 +54,12 @@ $(document).ready(function () {
 
     $("#btnSave").click(function () { 
         if (ktEmail()==true && ktMSSV()==true && ktTen()==true) {
-            var row
-            var talent = $('input[name=talent]:checkbox:checked').map(function() {
+            var row;
+            /*var talent = $('input[name=talent]:checkbox:checked').map(function() {
+                return this.value;
+            }).get();*/
+
+            var talent = $('input[name=talent]:checked').map(function () {
                 return this.value;
             }).get();
             
@@ -69,6 +73,7 @@ $(document).ready(function () {
             row += "<td>" + $("#txtTP").val(); + "</td>"
             row += "</tr>";
             $("tbody").append(row);
+            $('#myModal').modal("hide");
         }
         else{
             alert("Bạn chưa nhập đầy đủ thông tin");
